@@ -15,15 +15,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, rgb(61, 3, 35), rgb(238, 175, 234));
+    background-image: linear-gradient(to bottom, rgb(116, 4, 65), rgb(252, 213, 249));
 }
-nav {
+nav{
     text-align: center;
     background-color: rgb(226, 128, 235);
-    font-size: 20px;
-    height: 30px;
+    padding: 10px;
+    box-shadow: 0px 7px 7px;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
 }
+
 p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+footer{
+    background-color: #550202; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto no footer */
+    text-align: center; /* Alinhamento do texto no centro */
+    padding: 10px; /* Espaçamento interno */
+}
+footer p {
+    font-size: 20px; /* Tamanho da fonte do texto */
+    margin: 0; /* Remova as margens padrão para o parágrafo */
 }
