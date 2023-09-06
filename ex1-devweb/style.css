@@ -10,6 +10,15 @@ header{
     border-radius: 10px;
     box-shadow: 0px 7px 2px 2px black;
     background-image: linear-gradient(to bottom, black, red);
+    display: flex; /* Usar display flex para alinhar a imagem e o título lado a lado */
+    align-items: center; /* Alinhar verticalmente o conteúdo ao centro */
+    justify-content: center;
+}
+/* Estilo para o ícone */
+.icone {
+    width: 100px; /* Largura do ícone */
+    height: 100px; /* Altura do ícone */
+    margin-left: 20px; /* Espaço à direita do ícone */
 }
 body {
     font-family: Arial, sans-serif;
@@ -33,6 +42,49 @@ p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+
+/* Estilizar o controle de áudio */
+audio {
+    width: 100%;
+    max-width: 400px;
+     /* Defina a largura máxima para evitar que o elemento fique muito largo */
+    margin: 10px 0;
+}
+/* Estilizar o painel de controles internos do áudio */
+audio::-webkit-media-controls-panel {
+    background-color: #eda0ec; /* Cor de fundo do painel de controles */
+    color: #fff; /* Cor do texto dentro do painel de controles */
+    border-radius: 10px; /* Borda arredondada para o painel de controles*/
+    padding: 10px; /* Espaçamento interno do painel de controles */
+}
+
+/* Estilizar os botões de controle */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-volume-slider {
+    background-color: #5538bd; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do ícone */
+    border: none;
+    border-radius: 50%; /* Para tornar os botões redondos */
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+
+/* Estilizar a barra de progresso */
+audio::-webkit-media-controls-timeline {
+    background-color: #ed62b3; /* Cor de fundo da barra de progresso */
+}
+
+/* Estilizar o tempo atual e a duração */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #9d0606; /* Cor do texto de tempo */
+    font-size: 14px; /* Tamanho da fonte do tempo */
+    margin: 0 10px;
+}
+
 footer{
     background-color: #550202; /* Cor de fundo do footer */
     color: #fff; /* Cor do texto no footer */
