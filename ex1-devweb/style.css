@@ -43,6 +43,14 @@ p{
     font-size: 20px;
 }
 
+form{
+    display: inline;
+    align-items: center;
+}
+label{
+    text-align: center;
+}
+
 /* Estilizar o controle de áudio */
 audio {
     width: 100%;

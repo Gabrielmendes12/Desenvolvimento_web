@@ -1,0 +1,29 @@
+video {
+    width: 100%; /* Define a largura do vídeo para 100% da largura do contêiner pai */
+    max-width: 1000px; /* Define uma largura máxima para o vídeo, se necessário */
+    height: auto; /* Mantém a proporção original do vídeo */
+    display: block; /* Remove qualquer espaço extra ao redor do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente no contêiner pai */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b18b8e;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #0078d4;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
