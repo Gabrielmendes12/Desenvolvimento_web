@@ -25,7 +25,7 @@ video {
 }
 
 .vertical {
-    flex: 0 0 calc(20% - 20px); /* 25% de largura com espaço entre eles */
+    flex: 0 0 calc(21% - 20px); /* 25% de largura com espaço entre eles */
 }
 
 .horizontal {
