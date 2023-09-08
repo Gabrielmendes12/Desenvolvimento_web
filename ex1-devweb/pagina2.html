@@ -5,12 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+
+    <style>
+        .listas {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alinhe os vídeos na parte superior do contêiner */
+            padding: 20px;
+            list-style-type: none; /* Remova as marcadores de lista */
+        }
+
+        .listas li {
+            margin: 10px;
+            box-sizing: border-box; /* Inclua margens no cálculo de largura */
+        }
+    </style>
+    
     <title>Aula 6</title>
 </head>
 <body>
-    <h2>Abaixo será possível acessar um curto vídeo</h2>
-    <video controls>
-        <source src="video (1080p).mp4" type="video/mp4">
-    </video> 
+
+    <h1>Abaixo será possível assistir aos vídeos listados</h1>
+
+    <ul class="listas">
+        <li class="vertical">
+            <video id="video1" controls>
+                <source src="pizza-parmacomrucula.mp4" type="video/mp4">
+            </video>
+        </li>
+        <li class="vertical">
+            <video id="video2" controls>
+                <source src="hamburguer.mp4" type="video/mp4">
+            </video> 
+        </li>
+        <li class="horizontal">
+            <video id="video3" controls>
+                <source src="comida-japonesa.mp4" type="video/mp4">
+            </video> 
+        </li>
+        <li class="horizontal">
+            <video id="video4" controls>
+                <source src="fatiadebolo.mp4" type="video/mp4">
+            </video>
+        </li>
+    </ul>
+    <!-- 
+    <div class="video-container">
+        <video id="video1" controls>
+            <source src="hamburguer.mp4" type="video/mp4">
+        </video>
+        <video id="video2" controls>
+            <source src="pizza-parmacomrucula.mp4" type="video/mp4">
+        </video>
+        <video id="video3" controls>
+            <source src="comida-japonesa.mp4" type="video/mp4">
+        </video>
+        <video id="video4" controls>
+            <source src="fatiadebolo.mp4" type="video/mp4">
+        </video>
+    </div> -->
+    
 </body>
 </html>

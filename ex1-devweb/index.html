@@ -9,8 +9,30 @@
     <style>
         .x1{
             text-align: center;
-            background-color:rgb(241, 111, 224);
+            background-color:rgb(255, 144, 242);
             color: indigo;
+        }
+        .musica{
+            text-align: center;
+        }
+        .buttons{
+            text-align: center;
+        }
+        /* Estilize o link como um botão */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #880202; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            text-decoration: none; /* Remova o sublinhado padrão do link */
+            border: none; /* Remova a borda do botão */
+            border-radius: 10px; /* Adicione cantos arredondados ao botão */
+            margin-right: 10px;
+        }
+
+        /* Estilize o link quando o mouse passar sobre ele */
+        .button-link:hover {
+            box-shadow: 0px 7px 0px 0px rgb(63, 0, 0); /* Cor de fundo do botão ao passar o mouse */
         }
     </style>
     <title>Aula 5</title>
@@ -22,32 +44,57 @@
     <nav>
         <p><a href="https://github.com/ibmec-tec/des-web-1-2023-2" target="_blank">Repositório Github</a></p>
     </nav>
-    
-    <form method="get">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
-        <button type="submit">Enviar</button>
-    </form> 
 
-    <form method="post">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <button type="submit">Enviar</button>
-    </form> 
+    
+    <div class = "conteudo">
+        <form method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <button type="submit">Enviar</button>
+        </form>
+        <form method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <nav id="menu">
+            <a href="https://ge.globo.com/futebol/times/flamengo/" target="_blank" class="nav-link">
+                <img src="https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg" alt="Flamengo"> 
+                Notícias Flamengo</a>
+            <a href="https://ge.globo.com/futebol/times/botafogo/" target="_blank" class="nav-link">
+                <img src="https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg" alt="Botafogo"> 
+                Notícias Botafogo </a>
+            <a href="https://ge.globo.com/futebol/times/fluminense/" target="_blank" class="nav-link">
+                <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg" alt="Fluminense"> 
+                Notícias Fluminense </a>
+            <a href="https://ge.globo.com/futebol/times/vasco/" target="_blank" class="nav-link">
+                <img src="https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg" alt="Vasco"> 
+                Notícias Vasco </a>
+        </nav>
+    </div>
 
     <main>
-        <h1 class = "x1"><span style="font-weight: lighter">Minha página web</span></h1>
-        <h2>Reproduza esta música relaxante</h2>
-        <audio preload ="metadata" autoplay controls>
-            <source src="musica.mp3" type="audio/mpeg">
-        </audio>
+        <h1 class = "x1"><span style="font-weight: lighter; font-family:Georgia, 'Times New Roman', Times, serif;">Conteúdos da Página</span></h1>
 
-        <h2>Meus vídeos</h2>
-        <ul>
-        <li><a href="pagina2.html">Assista ao Vídeo</a></li>
-        </ul>
 
-        <h2>Conteúdo dos elementos</h2>
+        <div class="musica">
+            <h2>Reproduza esta música relaxante</h2>
+            <audio preload ="metadata" autoplay controls>
+                <source src="musica.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+
+        <div class = "buttons">
+            <h2>Meus vídeos de comida</h2>
+            <a href="pagina2.html" target="_blank" class="button-link">Hamburguer</a>
+            <a href="pagina2.html" target="_blank" class="button-link">Pizza</a>
+            <a href="pagina2.html" target="_blank" class="button-link">Japonesa</a>
+            <a href="pagina2.html" target="_blank" class="button-link">Bolo</a>
+        </div>
+
+        <h2>Um pouco sobre o conteúdo HTML</h2>
 
         <ol type="I">
             <p>Algumas Tags Principais</p>
@@ -67,12 +114,6 @@
             <li>menu</li>
             <li>section</li>
         </ul>
-        <menu>
-            <li>Flamengo</li>
-            <li>Botafogo</li>
-            <li>Fluminense</li>
-            <li>Vasco</li>
-        </menu>
     </main> 
     <footer>
         <p>Copyright © 2023. Gabriel Mendes. Todos os direitos reservados.</p>
